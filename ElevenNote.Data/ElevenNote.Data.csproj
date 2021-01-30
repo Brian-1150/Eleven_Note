@@ -85,12 +85,36 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IdentityModels.cs" />
+    <Compile Include="Migrations\202101290233485_InitialCreate.cs" />
+    <Compile Include="Migrations\202101290233485_InitialCreate.Designer.cs">
+      <DependentUpon>202101290233485_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101291803463_InitialMigration.cs" />
+    <Compile Include="Migrations\202101291803463_InitialMigration.Designer.cs">
+      <DependentUpon>202101291803463_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101291805558_RemovedFaultyRequiredAttributeFromNoteClass.cs" />
+    <Compile Include="Migrations\202101291805558_RemovedFaultyRequiredAttributeFromNoteClass.Designer.cs">
+      <DependentUpon>202101291805558_RemovedFaultyRequiredAttributeFromNoteClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Note.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202101290233485_InitialCreate.resx">
+      <DependentUpon>202101290233485_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101291803463_InitialMigration.resx">
+      <DependentUpon>202101291803463_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101291805558_RemovedFaultyRequiredAttributeFromNoteClass.resx">
+      <DependentUpon>202101291805558_RemovedFaultyRequiredAttributeFromNoteClass.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
