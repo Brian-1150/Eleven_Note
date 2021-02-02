@@ -12,6 +12,7 @@ namespace ElevenNoteAPI
     {
         public void Configuration(IAppBuilder app)
         {
+            app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll); //why did we bother to download cors and just allow all???
             ConfigureAuth(app);
         }
     }
