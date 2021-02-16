@@ -107,6 +107,10 @@
     <Compile Include="Migrations\202101291805558_RemovedFaultyRequiredAttributeFromNoteClass.Designer.cs">
       <DependentUpon>202101291805558_RemovedFaultyRequiredAttributeFromNoteClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102161505334_FirstMigrationAfterClone.cs" />
+    <Compile Include="Migrations\202102161505334_FirstMigrationAfterClone.Designer.cs">
+      <DependentUpon>202102161505334_FirstMigrationAfterClone.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Note.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -124,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101291805558_RemovedFaultyRequiredAttributeFromNoteClass.resx">
       <DependentUpon>202101291805558_RemovedFaultyRequiredAttributeFromNoteClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102161505334_FirstMigrationAfterClone.resx">
+      <DependentUpon>202102161505334_FirstMigrationAfterClone.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
